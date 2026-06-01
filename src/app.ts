@@ -35,6 +35,7 @@ app.use(
         origin: [
             "http://localhost:3000",
             "https://nh11-soccer-booking-ui.vercel.app",
+            process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000",
         ], // Chỉ cho phép frontend từ localhost:3000 và https://nh11-soccer-booking-ui.vercel.app/
         // origin: "*",
         credentials: true, // Cho phép gửi cookie từ frontend
